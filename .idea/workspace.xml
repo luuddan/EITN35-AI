@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:august" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e03a997-0630-4952-a2d4-b5d72084132e" name="Default Changelist" comment="Pushed Cyclegan and cyclegan-imageGenerator">
+      <change afterPath="$PROJECT_DIR$/Old/CNN_baseline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Old/CNN_from_scratch_cats_dogs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Old/GAN-Mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Old/object_detection_v4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Old/object_detection_v5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utilities/object_detection_labeling.py" afterDir="false" />
+    </list>
+    <list id="9cf189fa-58bf-43f9-a220-1be422728a3f" name="test" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="august" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bAAOKLnc1hw1doMjMNtAkERFZ2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EITN35-AI" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eitn35\PycharmProjects\EITN35\Utilities" />
+      <recent name="C:\Users\eitn35\PycharmProjects\EITN35\Old" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eitn35\PycharmProjects\EITN35" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Baseline_model_V3_224x224">
+    <configuration name="Baseline_model_V3_224x224" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EITN35" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baseline_model_V3_224x224.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CycleGan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EITN35" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CycleGan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GAN - Facedata-color" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EITN35" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GAN - Facedata-color.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="video_splitting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EITN35" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video_splitting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.video_splitting" />
+        <item itemvalue="Python.GAN - Facedata-color" />
+        <item itemvalue="Python.CycleGan" />
+        <item itemvalue="Python.Baseline_model_V3_224x224" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e03a997-0630-4952-a2d4-b5d72084132e" name="Default Changelist" comment="" />
+      <changelist id="9cf189fa-58bf-43f9-a220-1be422728a3f" name="test" comment="" />
+      <created>1588064490266</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588064490266</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Uppdate from masterComp">
+      <created>1588755562538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588755562538</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Got a &quot;baseline&quot; model working, also updated requirements.txt">
+      <created>1588779718170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588779718170</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Pushed Cyclegan and cyclegan-imageGenerator">
+      <created>1589556066809</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589556066809</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated files and restructed architecture">
+      <created>1591005731432</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591005731432</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Removed cats&amp;dogs">
+      <created>1591005902175</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591005902175</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test">
+      <created>1591007405455</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591007405455</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test">
+      <created>1591010483117</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591010483117</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test">
+      <created>1591010834981</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591010834981</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test">
+      <created>1591011206385</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591011206385</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test">
+      <created>1591011284842</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591011284842</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="august" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="august" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Uppdate from masterComp" />
+    <MESSAGE value="Got a &quot;baseline&quot; model working, also updated requirements.txt" />
+    <MESSAGE value="Pushed Cyclegan and cyclegan-imageGenerator" />
+    <MESSAGE value="Updated files and restructed architecture" />
+    <MESSAGE value="Removed cats&amp;dogs" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591013156269">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591013156269" />
+    <state x="-2468" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1591012556877">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2468" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1591012556877" />
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1591013437201">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591013437201" />
+    <state width="2539" height="214" key="GridCell.Tab.0.bottom" timestamp="1591007093416">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1259" height="214" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590929572177" />
+    <state width="1362" height="131" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590411779300" />
+    <state width="2539" height="214" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007093416" />
+    <state width="2539" height="214" key="GridCell.Tab.0.center" timestamp="1591007093416">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1259" height="214" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590929572177" />
+    <state width="1362" height="131" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590411779300" />
+    <state width="2539" height="214" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007093416" />
+    <state width="2539" height="214" key="GridCell.Tab.0.left" timestamp="1591007093416">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1259" height="214" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590929572177" />
+    <state width="1362" height="131" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590411779300" />
+    <state width="2539" height="214" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007093416" />
+    <state width="2539" height="214" key="GridCell.Tab.0.right" timestamp="1591007093416">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1259" height="214" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590929572177" />
+    <state width="1362" height="131" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590411779300" />
+    <state width="2539" height="214" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007093416" />
+    <state x="312" y="0" key="MergeDialog" timestamp="1591006843909">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="312" y="0" key="MergeDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591006843909" />
+    <state x="786" y="390" width="1115" height="265" key="MultipleFileMergeDialog" timestamp="1591006843909">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="786" y="390" width="1115" height="265" key="MultipleFileMergeDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591006843909" />
+    <state x="-2308" y="190" key="SettingsEditor" timestamp="1590415813220">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2308" y="190" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590415813220" />
+    <state x="252" y="190" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1589358963045" />
+    <state x="-1433" y="614" key="VCS.ChangelistChooser" timestamp="1591010902954">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-1433" y="614" key="VCS.ChangelistChooser/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1591010902954" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1591007619142">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007619142" />
+    <state x="-345" y="130" width="2376" height="1216" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1591013351304">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2406" y="76" width="2376" height="1216" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1591012556877" />
+    <state x="-345" y="130" width="2376" height="1216" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591013351304" />
+    <state x="-2699" y="156" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591012185920">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2699" y="156" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1591012185920" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1589274601637">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1589274601637" />
+  </component>
+</project>

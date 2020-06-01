@@ -1,0 +1,66 @@
+EVOLVE_Baseline_model_1
+
+Run Result,1.0
+Training,0.91018385
+Validation,0.87215906
+Variance,0.03802
+Total_acc,0.7595505617977528
+Person_acc,0.7457627118644068
+Dog_acc,0.058823529411764705
+Bike_acc,0.22857142857142856
+Empty_acc,0.9849246231155779
+Epochs,113
+L2_reg,0.1
+Drop_rate,0.0
+
+Run Result,2.0
+Training,0.9653465
+Validation,0.8948864
+Variance,0.07046
+Total_acc,0.8764044943820225
+Person_acc,0.903954802259887
+Dog_acc,0.4411764705882353
+Bike_acc,0.6285714285714286
+Empty_acc,0.9698492462311558
+Epochs,150
+L2_reg,0.05
+Drop_rate,0.0
+
+Run Result,3.0
+Training,0.97171146
+Validation,0.86079544
+Variance,0.1109
+Total_acc,0.8404494382022472
+Person_acc,0.8192090395480226
+Dog_acc,0.38235294117647056
+Bike_acc,0.5428571428571428
+Empty_acc,0.9899497487437185
+Epochs,143
+L2_reg,0.01
+Drop_rate,0.0
+
+Run Result,4.0
+Training,1.0
+Validation,0.90625
+Variance,0.09375
+Total_acc,0.8898876404494382
+Person_acc,0.8926553672316384
+Dog_acc,0.4411764705882353
+Bike_acc,0.7714285714285715
+Empty_acc,0.9849246231155779
+Epochs,112
+L2_reg,0.005
+Drop_rate,0.0
+
+Run Result,5.0
+Training,1.0
+Validation,0.90625
+Variance,0.09375
+Total_acc,0.8853932584269663
+Person_acc,0.8813559322033898
+Dog_acc,0.47058823529411764
+Bike_acc,0.7428571428571429
+Empty_acc,0.9849246231155779
+Epochs,61
+L2_reg,0.001
+Drop_rate,0.0
