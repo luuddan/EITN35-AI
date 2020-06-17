@@ -6,32 +6,53 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:august" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e03a997-0630-4952-a2d4-b5d72084132e" name="Default Changelist" comment="Pushed Cyclegan and cyclegan-imageGenerator">
-      <change afterPath="$PROJECT_DIR$/Old/CNN_baseline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Old/CNN_from_scratch_cats_dogs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Old/GAN-Mnist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Old/object_detection_v4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Old/object_detection_v5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utilities/object_detection_labeling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CycleGan/CycleGan-ImageGenerator-singles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CycleGan/CycleGan-ProcessImages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CycleGan/Model_layers_10_GanTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CycleGan/Model_layers_2_GanTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_-6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_-8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_14.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_16.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/Model_layers_8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/VGG16_benchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageRecognition/VGG16_benchmark_barebones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EITN35.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EITN35.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CycleGan/Cycle-ImageGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/CycleGan/Cycle-ImageGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CycleGan/CycleGan.py" beforeDir="false" afterPath="$PROJECT_DIR$/CycleGan/CycleGanCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gan/GAN - Facedata-color.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gan/GAN-DayTunnel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageRecognition/Baseline_model_V3_224x224.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageRecognition/Baseline_model_V3_224x224.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageRecognition/EVOLVE_model_V2_224x224.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageRecognition/EVOLVE_model_V2_224x224.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageRecognition/automated_layer_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageRecognition/automated_layer_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/mp4_conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/mp4_conversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/train_val_test_set_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/train_val_test_set_creator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/video_splitting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/video_splitting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_results/EVOLVE_Baseline_model_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_results/EVOLVE_Baseline_model_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_results/EVOLVE_Baseline_model_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_results/EVOLVE_Baseline_model_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_results/EVOLVE_Baseline_model_5.txt" beforeDir="false" />
     </list>
     <list id="9cf189fa-58bf-43f9-a220-1be422728a3f" name="test" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +70,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="august" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,20 +84,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EITN35-AI" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ImageRecognition" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eitn35\PycharmProjects\EITN35-AI\CycleGan" />
+      <recent name="C:\Users\eitn35\PycharmProjects\EITN35-AI" />
       <recent name="C:\Users\eitn35\PycharmProjects\EITN35\Utilities" />
       <recent name="C:\Users\eitn35\PycharmProjects\EITN35\Old" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eitn35\PycharmProjects\EITN35-AI\ImageRecognition" />
+      <recent name="C:\Users\eitn35\PycharmProjects\EITN35-AI\CycleGan" />
+      <recent name="C:\Users\eitn35\PycharmProjects\EITN35-AI" />
       <recent name="C:\Users\eitn35\PycharmProjects\EITN35" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Baseline_model_V3_224x224">
-    <configuration name="Baseline_model_V3_224x224" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.CycleGanCode">
+    <configuration name="CycleGan-ImageGenerator-singles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EITN35" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,11 +110,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CycleGan" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baseline_model_V3_224x224.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CycleGan/CycleGan-ImageGenerator-singles.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CycleGan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="CycleGanCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EITN35" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,7 +135,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CycleGan.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\eitn35\PycharmProjects\EITN35-AI\CycleGan\CycleGanCode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GAN - Facedata-color" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="CycleGanCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EITN35" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CycleGan" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GAN - Facedata-color.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\eitn35\PycharmProjects\EITN35-AI\CycleGanCode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="video_splitting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Model_layers_10_GanTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EITN35" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,11 +173,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CycleGan" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video_splitting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CycleGan/Model_layers_10_GanTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Model_layers_2_GanTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EITN35" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CycleGan" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CycleGan/Model_layers_2_GanTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="automated_layer_testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EITN35" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ImageRecognition" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageRecognition/automated_layer_testing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,10 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.video_splitting" />
-        <item itemvalue="Python.GAN - Facedata-color" />
-        <item itemvalue="Python.CycleGan" />
-        <item itemvalue="Python.Baseline_model_V3_224x224" />
+        <item itemvalue="Python.Model_layers_10_GanTest" />
+        <item itemvalue="Python.Model_layers_2_GanTest" />
+        <item itemvalue="Python.CycleGanCode" />
+        <item itemvalue="Python.CycleGan-ImageGenerator-singles" />
+        <item itemvalue="Python.automated_layer_testing" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591011284842</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Readded files from previous repository to new one">
+      <created>1591013671609</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591013671609</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +346,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="august" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -305,9 +381,14 @@
     <MESSAGE value="Updated files and restructed architecture" />
     <MESSAGE value="Removed cats&amp;dogs" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Readded files from previous repository to new one" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readded files from previous repository to new one" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591047225834">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1591047225834" />
     <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591013156269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -316,34 +397,63 @@
       <screen x="-2560" y="0" width="2560" height="1400" />
     </state>
     <state x="-2468" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1591012556877" />
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1591013437201">
+    <state x="530" y="190" key="FileChooserDialogImpl" timestamp="1591047127317">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="530" y="190" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591047127317" />
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588068193086" />
+    <state width="2539" height="159" key="GridCell.Tab.0.bottom" timestamp="1592392087300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591013437201" />
-    <state width="2539" height="214" key="GridCell.Tab.0.bottom" timestamp="1591007093416">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590929572177" />
+    <state width="1259" height="159" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592228731024" />
+    <state width="825" height="230" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1591479393904" />
     <state width="1362" height="131" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590411779300" />
-    <state width="2539" height="214" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007093416" />
-    <state width="2539" height="214" key="GridCell.Tab.0.center" timestamp="1591007093416">
+    <state width="2539" height="244" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591721126452" />
+    <state width="2539" height="159" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592392087300" />
+    <state width="2539" height="159" key="GridCell.Tab.0.center" timestamp="1592392087300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590929572177" />
+    <state width="1259" height="159" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592228731024" />
+    <state width="825" height="230" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1591479393903" />
     <state width="1362" height="131" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590411779300" />
-    <state width="2539" height="214" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007093416" />
-    <state width="2539" height="214" key="GridCell.Tab.0.left" timestamp="1591007093416">
+    <state width="2539" height="244" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591721126452" />
+    <state width="2539" height="159" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592392087300" />
+    <state width="2539" height="159" key="GridCell.Tab.0.left" timestamp="1592392087300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590929572177" />
+    <state width="1259" height="159" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592228731008" />
+    <state width="825" height="230" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1591479393902" />
     <state width="1362" height="131" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590411779300" />
-    <state width="2539" height="214" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007093416" />
-    <state width="2539" height="214" key="GridCell.Tab.0.right" timestamp="1591007093416">
+    <state width="2539" height="244" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591721126452" />
+    <state width="2539" height="159" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592392087300" />
+    <state width="2539" height="159" key="GridCell.Tab.0.right" timestamp="1592392087300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590929572177" />
+    <state width="1259" height="159" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592228731024" />
+    <state width="825" height="230" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1591479393903" />
     <state width="1362" height="131" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590411779300" />
-    <state width="2539" height="214" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591007093416" />
+    <state width="2539" height="244" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591721126452" />
+    <state width="2539" height="159" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592392087300" />
+    <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1592209626836">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592209626836" />
+    <state width="2539" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591878066258" />
+    <state width="2539" height="492" key="GridCell.Tab.1.center" timestamp="1592209626836">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1592209626836" />
+    <state width="2539" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591878066258" />
+    <state width="2539" height="492" key="GridCell.Tab.1.left" timestamp="1592209626836">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1592209626836" />
+    <state width="2539" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591878066258" />
+    <state width="2539" height="492" key="GridCell.Tab.1.right" timestamp="1592209626836">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1592209626836" />
+    <state width="2539" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591878066258" />
     <state x="312" y="0" key="MergeDialog" timestamp="1591006843909">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -352,11 +462,12 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="786" y="390" width="1115" height="265" key="MultipleFileMergeDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591006843909" />
-    <state x="-2308" y="190" key="SettingsEditor" timestamp="1590415813220">
-      <screen x="-2560" y="0" width="2560" height="1400" />
+    <state x="126" y="0" key="SettingsEditor" timestamp="1591047445605">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="126" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1591047445605" />
     <state x="-2308" y="190" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1590415813220" />
-    <state x="252" y="190" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1589358963045" />
+    <state x="252" y="190" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591015802924" />
     <state x="-1433" y="614" key="VCS.ChangelistChooser" timestamp="1591010902954">
       <screen x="-2560" y="0" width="2560" height="1400" />
     </state>
@@ -374,9 +485,29 @@
       <screen x="-2560" y="0" width="2560" height="1400" />
     </state>
     <state x="-2699" y="156" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1591012185920" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1589274601637">
+    <state x="886" y="310" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591266422619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1589274601637" />
+    <state x="886" y="310" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591266422619" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1591274981153">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1591274981153" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CycleGan/Model_layers_10_GanTest.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CycleGan/Model_layers_10_GanTest.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

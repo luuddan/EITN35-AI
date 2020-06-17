@@ -4,7 +4,7 @@ import ffmpy
 PRINT_DEBUG = True
 
 #Dir where video files to be converted are located
-directory = 'C:/Users/eitn35/Documents/EITN35/Archive/'
+directory = 'C:/Users/eitn35/Documents/EITN35/video_files/SprayedVideos/'
 os.chdir(directory)
 
 #Create "converted" folder if it does not exist

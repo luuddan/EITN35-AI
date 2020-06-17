@@ -23,25 +23,28 @@ import time
 import getopt
 
 
-print ('Nbr of arguments: ' , len(sys.argv) , 'total')
-print ('Arguments list: ' , str(sys.argv))
 
-train_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/image_frames/train_set/'
-val_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/image_frames/val_set/'
-test_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/image_frames/test_set/'
-save_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/models_and_weights_EVOLVE/models/saved_models_and_weights/'
-work_dir = 'C:/Users/eitn35/PycharmProjects/EITN35-AI/ImageRecognition/'
+
+
+learning_rate_input = 0.001
+drop_param = 0
+reg_param = 0
+run_number = 1
+data_fraction = 1
+batch_size = 32
+test_dir = 'C:/Users/eitn35/Documents/EITN35/video_files/frames/CycleGan/TestSetCycleNight/GeneratedDayFinal/'
+#test_dir = 'C:/Users/eitn35/Documents/EITN35/video_files/frames/CycleGan/TestSetCycleNight/Night/NightAllFinal/'
+#test_dir = 'C:/Users/eitn35/Documents/EITN35/video_files/frames/CycleGan/TestSetCycleNight/Night/NightAllFinal/'
+model_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/models_and_weights_EVOLVE/models/saved_models_and_weights/'
+#test_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/image_frames/data_set_' + str(1.0) + '/test_set_' + str(1.0) + '/'
 
 test_imgs = [test_dir + '{}'.format(i) for i in os.listdir(test_dir)]  # get test images
-val_imgs = [val_dir + '{}'.format(i) for i in os.listdir(val_dir)]  # get val images
-train_imgs = [train_dir + '{}'.format(i) for i in os.listdir(train_dir)]  # get test images
+
 
 # shuffle it randomly
-random.shuffle(train_imgs)
-random.shuffle(val_imgs)
+
 random.shuffle(test_imgs)
 
-gc.collect()  # collect garbage to save memory
 
 import matplotlib.image as mpimg
 
@@ -80,75 +83,54 @@ def read_and_process_image(list_of_images):
 
 class_names = ['empty', 'person', 'dogs', 'bikes']
 
-X_train, y_train = read_and_process_image(train_imgs)
-X_val, y_val = read_and_process_image(val_imgs)
 X_test, y_test = read_and_process_image(test_imgs)
-
-# Lets view some of the pics
-plt.figure(figsize=(20, 10))
-columns = 4
-for i in range(columns):
-    plt.subplot(5 / columns + 1, columns, i + 1)
-    plt.imshow(X_train[i])
 
 import seaborn as sns
 
 gc.collect()
 
 # Convert list to numpy array
-X_train = np.array(X_train)
-y_train = np.array(y_train)
-X_val = np.array(X_val)
-y_val = np.array(y_val)
+
 X_test = np.array(X_test)
 y_test = np.array(y_test)
 
 # Lets split the data into train and test set
-print("Shape of train images is:", X_train.shape)
-print("Shape of train labels is:", y_train.shape)
-print("Shape of validation images is:", X_val.shape)
-print("Shape of validation labels is:", y_val.shape)
+
 print("Shape of test images is:", X_test.shape)
 print("Shape of test labels is:", y_test.shape)
 
 gc.collect()
 
 # get the length of the train and validation data
-ntrain = len(X_train)
-nval = len(X_val)
 
 # We will use a batch size of 32. Note: batch size should be a factor of 2.***4,8,16,32,64...***
-batch_size = 32
+#batch_size = float(sys.argv[6])
 
-my_callbacks = [tf.keras.callbacks.EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=20)] #my_callbacks = [tf.keras.callbacks.EarlyStopping(monitor='acc', mode='max', verbose=1, patience=20)]
+my_callbacks = [tf.keras.callbacks.EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=30)] #was 20
 
-learning_rate_input =float(sys.argv[1])
-drop_param =float(sys.argv[2])
-reg_param = float(sys.argv[3])
-run_number =float(sys.argv[4])
+# Change number of layers for correct model saving
+no_layers = 6
 
+# Model Setup
 model = models.Sequential()
-model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(ncolumns, nrows, 3),kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))  # input ska var (150, 150, 3)
+model.add(layers.Conv2D(32, (3, 3), padding = 'same', activation='relu', input_shape=(ncolumns, nrows, 3),kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))  # input ska var (150, 150, 3)
 model.add(layers.MaxPooling2D((2, 2)))
-model.add(layers.Dropout(drop_param))
-model.add(layers.Conv2D(64, (3, 3), activation='relu',kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))
+model.add(layers.Conv2D(32, (3, 3), padding = 'same', activation='relu',kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))
 model.add(layers.MaxPooling2D((2, 2)))
-model.add(layers.Dropout(drop_param))
-model.add(layers.Conv2D(128, (3, 3), activation='relu',kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))
+model.add(layers.Conv2D(64, (3, 3), padding = 'same', activation='relu',kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))
 model.add(layers.MaxPooling2D((2, 2)))
-model.add(layers.Dropout(drop_param))
-model.add(layers.Conv2D(128, (3, 3), activation='relu',kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))
+model.add(layers.Conv2D(64, (3, 3), padding = 'same', activation='relu',kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))
 model.add(layers.MaxPooling2D((2, 2)))
 model.add(layers.Flatten())
 model.add(layers.Dropout(drop_param))
-model.add(layers.Dense(512, activation='relu',kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))
+model.add(layers.Dense(128, activation='relu',kernel_regularizer = tf.keras.regularizers.l2(l=reg_param)))
 model.add(layers.Dense(4))  # Sigmoid function at the end because we have just two classes
 
-# Lets see our model
+# Model summary
 model.summary()
 
-# We'll use binary_crossentropy loss because its a binary classification
-opt = tf.keras.optimizers.Adam(learning_rate=learning_rate_input)
+# Compilation of model
+opt = tf.keras.optimizers.SGD(learning_rate=learning_rate_input) #which optimizer should med used
 model.compile(loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), optimizer=opt, metrics=['accuracy'])
 
 # Lets create the augmentation configuration
@@ -163,56 +145,7 @@ model.compile(loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=Tru
 
 #val_datagen = ImageDataGenerator(rescale=1. / 255)  # We do not augment validation data. we only perform rescale
 
-# Override current setup of ImageDataGenerator
-train_datagen = ImageDataGenerator()
-val_datagen = ImageDataGenerator()
-
-# Create the image generators
-train_generator = train_datagen.flow(X_train, y_train, batch_size=batch_size)
-val_generator = val_datagen.flow(X_val, y_val, batch_size=batch_size)
-
-start_time = time.time()
-
-history = model.fit_generator(train_generator, steps_per_epoch=ntrain // batch_size, epochs=150,
-                              validation_data=val_generator, validation_steps=nval // batch_size,
-                              callbacks=my_callbacks)
-
-end_time = time.time()
-
-# Save the model
-os.chdir(save_dir)
-model.save_weights('model_EVOLVE_v3_224x224_weights_run_'+ str(run_number)+ '.h5')
-model.save('model_EVOLVE_v3_224x224_keras_run_'+ str(run_number)+ '.h5')
-
-os.chdir(work_dir)
-
-# lets plot the train and val curve
-# get the details form the history object
-acc = history.history['acc']
-acc = acc[1:]
-val_acc = history.history['val_acc']
-val_acc = val_acc[1:]
-loss = history.history['loss']
-loss = loss[1:]
-val_loss = history.history['val_loss']
-val_loss = val_loss[1:]
-
-epochs = range(1, len(acc) + 1)
-
-# Train and validation accuracy
-plt.plot(epochs, acc, 'b', label='Training accurarcy')
-plt.plot(epochs, val_acc, 'r', label='Validation accurarcy')
-plt.title('Training and Validation accurarcy')
-plt.legend()
-
-plt.figure()
-# Train and validation loss
-plt.plot(epochs, loss, 'b', label='Training loss')
-plt.plot(epochs, val_loss, 'r', label='Validation loss')
-plt.title('Training and Validation loss')
-plt.legend()
-
-#plt.show()
+model.load_weights(model_dir + 'model_layers_6_data_frac_1.0_weights_run_6.0.h5')
 
 # Probability of test set
 probability_model = tf.keras.Sequential([model,
@@ -269,29 +202,72 @@ plt.tight_layout()
 
 # Probability of test set
 print("Shape of labels is:", predictions.shape)
-threshold = 0.6
+threshold = 0.1
 total_correct = 0
 dogs_correct = 0
 bikes_correct = 0
 persons_correct = 0
 empty_correct = 0
+confusion = np.zeros((4,4))
 for i in range(len(y_test)):
     index_max = np.argmax(predictions[i])
     if y_test[i] == index_max and predictions[i][index_max] > threshold:
         total_correct += 1
         if index_max == 1:
             persons_correct += 1
+            confusion[1, 1] += 1
         if index_max == 2:
             dogs_correct += 1
+            confusion[2, 2] += 1
         if index_max == 3:
             bikes_correct += 1
+            confusion[3, 3] += 1
         if index_max == 0:
             empty_correct += 1
+            confusion[0, 0] += 1
+    else:
+        if y_test[i] == 0:
+            if(index_max == 1):
+                confusion[1,0] += 1
+            if (index_max == 2):
+                confusion[2,0] += 1
+            if (index_max == 3):
+                confusion[3,0] += 1
+        if y_test[i] == 1:
+            if(index_max == 0):
+                confusion[0,1] += 1
+            if (index_max == 2):
+                confusion[2,1] += 1
+            if (index_max == 3):
+                confusion[3,1] += 1
+        if y_test[i] == 2:
+            if(index_max == 0):
+                confusion[0,2] += 1
+            if (index_max == 1):
+                confusion[1,2] += 1
+            if (index_max == 3):
+                confusion[3,2] += 1
+        if y_test[i] == 3:
+            if(index_max == 0):
+                confusion[0,3] += 1
+            if (index_max == 1):
+                confusion[1,3] += 1
+            if (index_max == 2):
+                confusion[2,3] += 1
+
+
+        print(str(test_imgs[i]))
+        print('Correct class: ' + str(y_test[i]))
+        print('Guess class: ' + str(index_max))
+        print('Confidence of guess: '+ str(predictions[i][index_max]))
+        print('--------------------------------------------')
+
+#hard coded percentages for each category, i.e. 0.403 * test_set = test_set_persons
 total_acc = total_correct / len(X_test)
-person_acc = persons_correct / 177
-dog_acc = dogs_correct / 34
-bike_acc = bikes_correct / 35
-empty_acc = empty_correct / 199
+person_acc = persons_correct / (len(X_test)*0.3897)
+dog_acc = dogs_correct / (len(X_test)*0.0787)
+bike_acc = bikes_correct / (len(X_test)*0.22058823)
+empty_acc = empty_correct / (len(X_test)*0.3897)
 
 print("Total accuracy ", total_acc)
 print("Person accuracy ", person_acc)
@@ -299,53 +275,57 @@ print("Dog accuracy ", dog_acc)
 print("Bike accuracy ", bike_acc)
 print("Empty accuracy ", empty_acc)
 
-#project_directory = '/Users/august/PycharmProjects/EITN35/'
-results = work_dir + 'training_results/'
+print("persons correct ", persons_correct)
+print("empty correct ", empty_correct)
+print("Bike correct ", bikes_correct)
+print("test_lenght ", len(X_test))
+print("persons correct ", persons_correct)
+print("empty correct ", empty_correct)
+print("Bike correct ", bikes_correct)
+print("test_lenght ", len(X_test))
 
+work_dir = 'C:/Users/eitn35/PycharmProjects/EITN35-Asses/'
+#project_directory = '/Users/august/PycharmProjects/EITN35/'
+results = work_dir
 
 def round_sig(x, sig=2):
     return round(x, sig - int(math.floor(math.log10(abs(x)))) - 1)
 
+def extractRunNo(elem):
+    if('Model' in elem):
+        return int(elem.split('_')[1].split('.')[0])
+    else:
+        return 0
 
-def print_to_file(acc, val_acc, loss, val_loss, total_acc, person_acc, dog_acc, bike_acc, empty_acc, epochs, reg_param):
-    # New CSV file
+
+
+def print_confusion():
+    t = time.localtime()
+    current_time = time.strftime("%H:%M:%S", t)
+
+    # training_results folder
     os.chdir(results)
     current_results = os.listdir(results)
-    current_results.sort()
-    working_file = current_results[len(os.listdir(results)) - 1]
-    print("Latest file is: " + str(working_file))
 
+    working_file_2 = 'results_confusionM.txt'
+    print("Confusion file found: " + str(working_file_2))
 
-    final_acc = acc[len(acc) - 1]
-    final_val_acc = val_acc[len(val_acc)-1]
-    final_loss = loss[len(loss) - 1]
-    final_val_loss = val_loss[len(val_loss) - 1]
-    var = final_acc - final_val_acc
-    var = round_sig(var, 4)
+    file = open(working_file_2, "a+")
+    file.write("\nConfusion Matrix Run at " + str(current_time))
+    file.write("\n")
+    for i in range(4):
+        for j in range(4):
+            file.write(str(confusion[i][j]) + ',')
+        file.write("\n")
 
-    total_time = end_time - start_time
-    total_time = round(total_time)
-
-    file = open(working_file, "a+")
-    file.write("\nRun Result," + str(run_number))
-    file.write("\nTraining," + str(final_acc))
-    file.write("\nValidation," + str(final_val_acc))
-    file.write("\nVariance," + str(var))
-    file.write("\nTotal_acc," + str(total_acc))
-    file.write("\nPerson_acc," + str(person_acc))
-    file.write("\nDog_acc," + str(dog_acc))
-    file.write("\nBike_acc," + str(bike_acc))
-    file.write("\nEmpty_acc," + str(empty_acc))
-    file.write("\nEpochs," + str(len(epochs)+1))
-    file.write("\nL2_reg," + str(reg_param))
-    file.write("\nDrop_rate," + str(drop_param))
-    file.write("\nRun time," + str(total_time))
-    file.write("\nLearning_rate," + str(learning_rate_input))
     file.write("\n")
     file.close()
 
 
-print_to_file(acc, val_acc, loss, val_loss, total_acc, person_acc, dog_acc, bike_acc, empty_acc, epochs, reg_param)
+print_confusion()
+
+print(confusion)
+
 
 
 

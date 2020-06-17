@@ -4,7 +4,7 @@ import os
 
 # Dir where video files to be split are located
 #directory_1 = '../../Documents/EITN35/video_files/converted'
-directory_1 = 'C:/Users/eitn35/Documents/EITN35/video_files/Archive'
+directory_1 = 'C:/Users/eitn35/Documents/EITN35/video_files/SprayedVideosConverted'
 # Dir where frames should be saved
 #directory_2 = '../../Documents/EITN35/video_files'
 
@@ -16,8 +16,8 @@ PRINT_DEBUG = True
 
 # Create "frames" folder if it does not exist
 try:
-    if not os.path.exists('frames'):
-        os.makedirs('frames')
+    if not os.path.exists('frames_sprayed'):
+        os.makedirs('frames_sprayed')
 except OSError:
     print('Error: Creating directory of data')
 
@@ -39,7 +39,7 @@ def split_video(video_file):
             if PRINT_DEBUG: print("Time stamp " + time_stamp)
 
             # save frame as JPG file
-            cv2.imwrite("./frames/frame_"+date_stamp+"_"+time_stamp+"nr"+str(count)+"_"+".jpg", image)
+            cv2.imwrite("./frames_sprayed/frame_"+date_stamp+"_"+time_stamp+"nr"+str(count)+"_"+".jpg", image)
             #cv2.imwrite("./frames/frame_" + str(count) + ".jpg", image)
         return hasFrames
 

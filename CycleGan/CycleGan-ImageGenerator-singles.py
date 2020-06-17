@@ -26,10 +26,16 @@ def select_sample(dataset, n_samples):
 	X = dataset[ix]
 	return X
 
+def select_all(dataset, n_samples):
+	# retrieve selected images
+	X = []
+	for i in range(n_samples):
+		X.append(dataset[[i]])
+	return X
+
+
 # plot the image, the translation, and the reconstruction
-def show_plot(imagesX, imagesY1, imagesY2):
-	images = vstack((imagesX, imagesY1, imagesY2))
-	titles = ['Real', 'Generated', 'Reconstructed']
+def show_plot(imagesX):
 	# scale from [-1,1] to [0,1]
 	images = (images + 1) / 2.0
 	# plot images row by row
@@ -45,20 +51,31 @@ def show_plot(imagesX, imagesY1, imagesY2):
 	pyplot.show()
 
 # load dataset
-A_data, B_data = load_real_samples('../../Documents/EITN35/day2night208all.npz')
+A_data, B_data = load_real_samples('../../../Documents/EITN35/night2day208testSetNightFinal.npz')
 print('Loaded', A_data.shape, B_data.shape)
 # load the models
 cust = {'InstanceNormalization': InstanceNormalization}
-model_AtoB = load_model('g_model_AtoB_049300_D2N208allv3.h5', cust)
-model_BtoA = load_model('g_model_BtoA_049300_D2N208allv3.h5', cust)
-# plot A->B->A
-A_real = select_sample(A_data, 1)
-B_generated  = model_AtoB.predict(A_real)
-A_reconstructed = model_BtoA.predict(B_generated)
-show_plot(A_real, B_generated, A_reconstructed)
-# plot B->A->B
-B_real = select_sample(B_data, 1)
-A_generated  = model_BtoA.predict(B_real)
-B_reconstructed = model_AtoB.predict(A_generated)
-show_plot(B_real, A_generated, B_reconstructed)
+model_AtoB = load_model('../../../Desktop/CycleGanBigFrameSetNoBikesV1/g_model_AtoB_019740_D2N208BigFrameSetNoBikesV1.h5', cust)
+model_BtoA = load_model('../../../Desktop/CycleGanBigFrameSetNoBikesV1/g_model_AtoB_019740_D2N208BigFrameSetNoBikesV1.h5', cust)
 
+
+A_real = select_all(A_data, 272)
+print(A_real[1].shape)
+i = 0
+counter = 0
+for e in A_real:
+	#e= (e + 1)/2.0
+	A_generated  = model_BtoA.predict(e)
+	A_generated = (A_generated + 1)/2.0
+	fig = pyplot.figure(frameon=False)
+	ax = pyplot.Axes(fig, [0., 0., 1., 1.])
+	ax.set_axis_off()
+	pyplot.axis('off')
+	fig.add_axes(ax)
+	ax.imshow(A_generated[0], aspect='auto')
+
+	filename1 = '../../../Documents/EITN35/video_files/frames/CycleGan//TestSetCycleNight/GeneratedDayFinal/%s_generated_pic_D2N208BigFrameSetV2.png' % (counter)
+	fig.savefig(filename1)
+	counter += 1
+
+pyplot.close()

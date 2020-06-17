@@ -65,7 +65,7 @@ def define_discriminator(image_shape):
 	# define model
 	model = Model(in_image, patch_out)
 	# compile model
-	model.compile(loss='mse', optimizer=Adam(lr=0.0002, beta_1=0.5), loss_weights=[0.5])
+	model.compile(loss='mse', optimizer=Adam(lr=0.0002, beta_1=0.5), loss_weights=[0.25])
 	return model
 
 # generator a resnet block
@@ -84,7 +84,7 @@ def resnet_block(n_filters, input_layer):
 	return g
 
 # define the standalone generator model
-def define_generator(image_shape, n_resnet=9):
+def define_generator(image_shape, n_resnet=6):
 	# weight initialization
 	init = RandomNormal(stddev=0.02)
 	# image input
@@ -180,10 +180,10 @@ def generate_fake_samples(g_model, dataset, patch_shape):
 # save the generator models to file
 def save_models(step, g_model_AtoB, g_model_BtoA):
 	# save the first generator model
-	filename1 = 'g_model_AtoB_%06d_D2N208BigFrameSetV1.h5' % (step+1)
+	filename1 = 'g_model_AtoB_%06d_D2S208XsmallV4.h5' % (step+1)
 	g_model_AtoB.save(filename1)
 	# save the second generator model
-	filename2 = 'g_model_BtoA_%06d_D2N208BigFrameSetV1.h5' % (step+1)
+	filename2 = 'g_model_BtoA_%06d_D2S208XsmallV4.h5' % (step+1)
 	g_model_BtoA.save(filename2)
 	print('>Saved: %s and %s' % (filename1, filename2))
 
@@ -207,7 +207,7 @@ def summarize_performance(step, g_model, trainX, name, n_samples=5):
 		pyplot.axis('off')
 		pyplot.imshow(X_out[i])
 	# save plot to file
-	filename1 = '%s_generated_plot_%06d_D2N208BigFrameSetV1.png' % (name, (step+1))
+	filename1 = '%s_generated_plot_%06d_D2S208XsmallV4.png' % (name, (step+1))
 	pyplot.savefig(filename1)
 	pyplot.close()
 
@@ -269,7 +269,7 @@ def train(d_model_A, d_model_B, g_model_AtoB, g_model_BtoA, c_model_AtoB, c_mode
 		# summarize performance
 		print('>%d, dA[%.3f,%.3f] dB[%.3f,%.3f] g[%.3f,%.3f]' % (i+1, dA_loss1,dA_loss2, dB_loss1,dB_loss2, g_loss1,g_loss2))
 		# evaluate the model performance every so often
-		if (i+1) % (bat_per_epo * 5) == 0:
+		if (i+1) % (bat_per_epo * 3) == 0:
 			# plot A->B translation
 			summarize_performance(i, g_model_AtoB, trainA, 'AtoB')
 			# plot B->A translation
@@ -280,7 +280,7 @@ def train(d_model_A, d_model_B, g_model_AtoB, g_model_BtoA, c_model_AtoB, c_mode
 			#save_models(i, g_model_AtoB, g_model_BtoA)
 
 # load image data
-dataset = load_real_samples('../../Documents/EITN35/night2day208BigFrameSetV2.npz')
+dataset = load_real_samples('../../../Documents/EITN35/day2spray208XSmall.npz')
 print('Loaded', dataset[0].shape, dataset[1].shape)
 # define input shape based on the loaded dataset
 image_shape = dataset[0].shape[1:]

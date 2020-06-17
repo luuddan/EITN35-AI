@@ -30,7 +30,7 @@ train_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/image_frames/train_set/'
 val_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/image_frames/val_set/'
 test_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/image_frames/test_set/'
 save_dir = 'C:/Users/eitn35/Documents/EITN35_EVOLVE/models_and_weights_EVOLVE/models/saved_models_and_weights/'
-work_dir = 'C:/Users/eitn35/PycharmProjects/EITN35/'
+work_dir = 'C:/Users/eitn35/PycharmProjects/EITN35-AI/ImageRecognition/'
 
 test_imgs = [test_dir + '{}'.format(i) for i in os.listdir(test_dir)]  # get test images
 val_imgs = [val_dir + '{}'.format(i) for i in os.listdir(val_dir)]  # get val images
@@ -118,7 +118,7 @@ ntrain = len(X_train)
 nval = len(X_val)
 
 # We will use a batch size of 32. Note: batch size should be a factor of 2.***4,8,16,32,64...***
-batch_size = 32
+batch_size = 16
 
 my_callbacks = [tf.keras.callbacks.EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=20)]
 reg_param = float(sys.argv[1])
@@ -158,7 +158,7 @@ model.add(layers.Dense(4))  # Sigmoid function at the end because we have just t
 model.summary()
 
 # We'll use binary_crossentropy loss because its a binary classification
-opt = tf.keras.optimizers.Adam(learning_rate=0.001)
+opt = tf.keras.optimizers.SGD(learning_rate=0.01)
 model.compile(loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), optimizer=opt, metrics=['accuracy'])
 
 # Lets create the augmentation configuration
